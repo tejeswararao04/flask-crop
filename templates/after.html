@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div>
+        <img src="https://res.cloudinary.com/dbtkas8kr/image/upload/v1712382789/IMG_20240404_095030_ga4gv8.png" style="width: 100%; height: 200px;"/>
+    </div>
+    <div class="div-container">
+        <div class="div-container1">
+            <a href="/aboutcrops"  class="side-btn">About crops</a>
+            <a href="/ourprofile"  class="side-btn">Our Profile</a>
+            <a href="/ourresearches"  class="side-btn">ourresearches</a>
+            <a href="/farmer"  class="side-btn">farmer</a>
+            <a href="/results"  class="side-btn">results</a>
+            <a href="/photos"  class="side-btn">photos</a>
+            <a href="/books"  class="side-btn">books</a>
+            <a href="/details"  class="side-btn">details</a>
+            <a href="/aboutus"  class="side-btn">aboutus</a>
+            <a href="/faqs"  class="side-btn">faqs</a>
+        </div>
+
+        <div class="div-container2"> 
+            <div class="con-1">
+                <img src="https://res.cloudinary.com/dbtkas8kr/image/upload/v1712382146/51899-removebg-preview_esqgiz.png" style="height: 300px;"/>
+            </div>
+            <div class="con-2">
+                
+                    <h1> Your suggested crop is <span style="color:#5cb85c;">{{ data }}</span></h1>
+            </div>
+        </div>
+    </div>
+        <footer id="contact">
+            <h3>Copy Rights</h3>
+        <p>All content on this website is protected by copyright law. Unauthorized use or reproduction of any content without prior written permission is strictly prohibited.<br> &copy; 2024 JAI KISAN. All Rights Reserved.</p>
+    </footer>
+</body>
+</html>
+
+
+
+
+
+
