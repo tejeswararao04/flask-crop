@@ -3,6 +3,7 @@ import pickle
 import numpy as np
 
 
+
 label=['rice' ,'maize', 'chickpea', 'kidneybeans', 'pigeonpeas', 'mothbeans',
  'mungbean', 'blackgram', 'lentil', 'pomegranate', 'banana', 'mango', 'grapes',
  'watermelon', 'muskmelon', 'apple', 'orange', 'papaya', 'coconut', 'cotton',
@@ -11,7 +12,7 @@ label=['rice' ,'maize', 'chickpea', 'kidneybeans', 'pigeonpeas', 'mothbeans',
 model = pickle.load(open('model.pkl', 'rb'))
 
 app = Flask(__name__)
-
+port = int(os.environ.get("PORT", 4000))
 
 
 @app.route('/')
@@ -75,7 +76,7 @@ def home():
 
 
 if __name__ == "__main__":
-    app.run(debug=True)
+    app.run(host="0.0.0.0", port=port)
 
 
 
