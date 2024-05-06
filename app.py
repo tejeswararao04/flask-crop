@@ -1,8 +1,7 @@
 from flask import Flask, render_template, request
 import pickle
 import numpy as np
-
-
+import os
 
 label=['rice' ,'maize', 'chickpea', 'kidneybeans', 'pigeonpeas', 'mothbeans',
  'mungbean', 'blackgram', 'lentil', 'pomegranate', 'banana', 'mango', 'grapes',
